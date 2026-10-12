@@ -1,0 +1,179 @@
+{
+  "info": {
+    "_postman_id": "05205a39-180c-4fd2-bdfb-9d35e3b8a0aa",
+    "name": "assignment4",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54533286",
+    "_collection_link": "https://go.postman.co/collection/54533286-05205a39-180c-4fd2-bdfb-9d35e3b8a0aa?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "createUser",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \r\n    \"name\": \"ahmad asaad\",\r\n    \"age\": 25,\r\n    \"email\": \"ahmad asaad@example.com\"\r\n  }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/user",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "user"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update user",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\":\"ahmad zaqout\",\"age\":21,\"email\":\"ahmadzq@example.com\"\r\n    \r\n   \r\n   \r\n  }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/user/7",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "user",
+            "7"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get user",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/user",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "user"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete user",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\":7\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/user/10",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "user",
+            "10"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getByName",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/user/getByName?name=ahmad",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "user",
+            "getByName"
+          ],
+          "query": [
+            {
+              "key": "name",
+              "value": "ahmad"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "filterUserByAge",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/user/filter?minAge=20",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "user",
+            "filter"
+          ],
+          "query": [
+            {
+              "key": "minAge",
+              "value": "20"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getUserById",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    }
+  ]
+}
