@@ -1,0 +1,23 @@
+{
+  "name": "assinment4",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/eng-ahmad-zaqout/ASSinment4#readme",
+  "bugs": {
+    "url": "https://github.com/eng-ahmad-zaqout/ASSinment4/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eng-ahmad-zaqout/ASSinment4.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
